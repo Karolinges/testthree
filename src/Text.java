@@ -21,25 +21,21 @@ public class Text {
 
     }
 
-    public int findBeginSentence(char symbol){
-        for (Sentence aL :textList) {
-            aL.sentenceList
-        }
-
-//        textList.get(i);
-        return 0;
-    }
-
     public int findEndSentence(char symbol){
-        return 0;
+        int count;
+        count=0;
+        for (int i=0; i<textList.size(); i++) {
+            if(textList.get(i).getSentenceList().get(textList.get(i).getSentenceList().size()-1) instanceof Punctuation){
+                if(((Punctuation) textList.get(i).
+                        getSentenceList().get(textList.get(i).getSentenceList().size()-1)).getPunctuation()==symbol){
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 
-
-    // получаем String "Text"
-    // разбиваем на предложения,
-    // каждое предложение передаем в Sentance в качестве параметра
-    // создаем массив предложений-обьектов класса Sentence
-
-
-
+//    public int findEndSentence(char symbol){
+//        return 0;
+//    }
 }

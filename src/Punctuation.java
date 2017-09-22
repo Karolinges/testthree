@@ -8,4 +8,8 @@ public class Punctuation extends Temp {
         this.punctuation = punctuation;
         ++punctuationCount;
     }
+
+    public char getPunctuation() {
+        return punctuation;
+    }
 }

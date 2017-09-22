@@ -6,7 +6,7 @@ import static java.lang.Character.isLetter;
 public class Sentence {
 
     public static int sentenceCount;
-    public ArrayList<Temp>sentenceList;
+    private ArrayList<Temp>sentenceList;
 
     public Sentence(String sentence) {
         System.out.println("sentence= "+sentence);
@@ -29,10 +29,7 @@ public class Sentence {
         ++sentenceCount;
     }
 
-
-    // получаем String "Sentence"
-    // разбиваем на слова,(и на пунктуацию)
-    // каждое слово передаем в Word в качестве параметра
-    // каждую пунктуацию передаем в Punctuation в качестве параметра
-    // создаем массив слов-обьектов и пунктуаци-объектов класса Word и Punctuation
+    public ArrayList<Temp> getSentenceList() {
+        return sentenceList;
+    }
 }

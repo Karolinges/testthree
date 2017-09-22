@@ -10,5 +10,6 @@ public class MainClass {
         System.out.println("Punctuation.punctuationCount= "+Punctuation.punctuationCount);
         System.out.println("Sentence.sentenceCount= "+Sentence.sentenceCount);
 
+        System.out.println("End Sentence= "+testText.findEndSentence('?'));
     }
 }
