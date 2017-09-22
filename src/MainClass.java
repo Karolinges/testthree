@@ -2,7 +2,7 @@ public class MainClass {
     public static void main(String[] args) {
 
 
-        Text testText=new Text("Нравится ли тебе Java? Очень нравится? Тогда посвящай Java, как можно больше " +
+        Text testText=new Text("Нравится ли тебе Java? очень нравится? Тогда посвящай Java, как можно больше " +
                 "времени, и днем, и ночью, и во сне)");
         
         System.out.println("Letter.letterCount= "+Letter.letterCount);
@@ -11,5 +11,6 @@ public class MainClass {
         System.out.println("Sentence.sentenceCount= "+Sentence.sentenceCount);
 
         System.out.println("End Sentence= "+testText.findEndSentence('?'));
+        System.out.println("Start word= "+testText.findStartWord('п'));
     }
 }

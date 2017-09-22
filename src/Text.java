@@ -35,7 +35,24 @@ public class Text {
         return count;
     }
 
-//    public int findEndSentence(char symbol){
-//        return 0;
-//    }
+    public int findStartWord (char symbol){
+        int count;
+        count=0;
+
+        Sentence tempSentense;
+        Word tempWord;
+
+        for (int i=0; i<textList.size(); i++) {
+            tempSentense=textList.get(i);
+            for (int j=0; j<tempSentense.getSentenceList().size(); j++) {
+                if(tempSentense.getSentenceList().get(j)instanceof Word){
+                    tempWord= (Word) tempSentense.getSentenceList().get(j);
+                    if(tempWord.getWordList().get(0).getLetter()==symbol ){
+                        ++count;
+                    }
+                }
+            }
+        }
+        return count;
+    }
 }

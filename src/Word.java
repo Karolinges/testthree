@@ -12,4 +12,7 @@ public class Word extends Temp{
         }
         ++wordCount;
     }
+    public ArrayList<Letter> getWordList() {
+        return wordList;
+    }
 }

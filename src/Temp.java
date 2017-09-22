@@ -1,2 +1,2 @@
-public class Temp {
+public abstract class Temp {
 }

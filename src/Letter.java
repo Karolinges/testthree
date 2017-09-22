@@ -9,4 +9,7 @@ public class Letter {
         this.letter = letter;
         ++letterCount;
     }
+    public char getLetter() {
+        return letter;
+    }
 }
